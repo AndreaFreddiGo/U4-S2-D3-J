@@ -23,4 +23,40 @@ public class Order {
         this.products = products;
         this.customer = customer;
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "customer=" + customer +
+                ", id=" + id +
+                ", status=" + status +
+                ", orderDate=" + orderDate +
+                ", deliveryDate=" + deliveryDate +
+                ", products=" + products +
+                '}';
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public LocalDate getDeliveryDate() {
+        return deliveryDate;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public LocalDate getOrderDate() {
+        return orderDate;
+    }
+
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
 }
